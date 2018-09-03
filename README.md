@@ -88,5 +88,5 @@ for i in range(100):
 
 ```
 
-More examples can be found in `/examples` folder.
+More examples can be found in `./examples` folder. e.g. try `python examples/broadcast.py`
 
