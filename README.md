@@ -6,6 +6,10 @@ Alternative WeChat client right in your terminal. Socialize without ever leaving
 
 ![](screenshots/screen01.png)
 
+## How it works
+
+WeChit controls a hidden [Google Chrome](https://www.google.com/chrome/) instance in the background via [Selenium](https://www.seleniumhq.org). It punches buttons and fetch data from [WeChat for Web](https://web.wechat.com) and feed it to your terminal. Your input is then automatically sent back for further interactions. Images are available for terminals supporting ANSI colors, and are rendered using custom ASCII-art engine.
+
 
 ## Features
 
@@ -27,9 +31,9 @@ Alternative WeChat client right in your terminal. Socialize without ever leaving
 - [Python](https://www.python.org) 2 or 3. 
 - [Selenium](https://selenium-python.readthedocs.io/installation.html) `pip install selenium`
 - [PIL/Pillow](https://pillow.readthedocs.io/en/5.2.x/) `pip install pillow`
-- [Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads) 
+- [Google Chrome](https://www.google.com/chrome/) and [Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
-Mainly tested on macOS 10.13, ChromeDriver 2.41.578706, Python 3.6.5 and Python 2.7.15, but should work on other OS and set-up too.
+Mainly tested on macOS 10.13, ChromeDriver 2.41.578706, Python 3.6.5 and Python 2.7.15, but should work on other OS and set-up too. Oher browser drivers (e.g. Safari, Firefox, etc.) may be used in place of ChromeDriver, but is untested and requires modifying source.
 
 ### Installation
 
@@ -48,10 +52,11 @@ Mainly tested on macOS 10.13, ChromeDriver 2.41.578706, Python 3.6.5 and Python 
 Besides running `wechit.py` as a commandline app, you can also import it as a python module and write your own script to automate sending messages. For example, use this script to harass your favorite frenemy by sending them the same message 100 times.
 
 ```python
+import time
 import wechit
 
-recipent="Bob"
-message="I love you"
+recipent = "Bob"
+message = "I love you"
 
 print("initializing...")
     
