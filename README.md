@@ -33,7 +33,7 @@ WeChit controls a hidden [Google Chrome](https://www.google.com/chrome/) instanc
 - [PIL/Pillow](https://pillow.readthedocs.io/en/5.2.x/) `pip install pillow`
 - [Google Chrome](https://www.google.com/chrome/) and [Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
-Mainly tested on macOS 10.13, ChromeDriver 2.41.578706, Python 3.6.5 and Python 2.7.15, but should work on other OS and set-up too. Oher browser drivers (e.g. Safari, Firefox, etc.) may be used in place of ChromeDriver, but is untested and requires modifying source.
+Mainly tested on macOS 10.13, ChromeDriver 2.41.578706, Python 3.6.5 and Python 2.7.15, but should work on other OS and set-up too. Other browser drivers (e.g. Safari, Firefox, etc.) may be used in place of ChromeDriver, but is untested and requires modifying source.
 
 ### Installation
 
